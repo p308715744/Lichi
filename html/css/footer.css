@@ -1,0 +1,13 @@
+/* 页尾 */
+#lc_footer	{ width:980px; height:285px; margin:10px 0 0 0; display:inline; float:left;}
+	#lc_footer_zzs		{ width:980px; height:72px; overflow:hidden; background:#000000; padding:20px 0; float:left;}
+	#lc_footer_zzs dt	{ width:192px; float:left;}
+	#lc_footer_zzs dd	{ width:191px; height:65px; padding:7px 0 0 0; border-left:#333333 1px solid; text-align:center; float:left;}
+	
+	#lc_footer_nav		{ width:980px; height:33px; line-height:33px; margin:10px 0 0 0; display:inline; background:#000000; text-align:center; color:#818181; float:left;}
+	#lc_footer_nav a	{ color:#818181;}
+	
+	#lc_footer_about	{ width:980px; height:75px; color:#818181; line-height:18px; overflow:hidden; margin:10px 0; display:inline; padding:21px 0 12px 0; background:#000000; float:left;}
+	#lc_footer_about dt	{ width:174px; border-right:#333333 1px solid; float:left;}
+	#lc_footer_about dd	{ padding:3px 0 0 23px; float:left;}
+	#lc_footer_about dd	a	{ color:#818181;}

@@ -1,0 +1,10 @@
+*			{ margin:0; padding:0; border:none;}
+html		{ background:url(../images/lc_bg.gif);}
+body		{ background:url(../images/lichi001.jpg) repeat-x; line-height:24px; font-size:12px; font-family:"ËÎÌו";}
+ol,ul,li	{ list-style-type:none;}
+a			{ text-decoration:none;}
+a:hover		{ text-decoration:underline;}
+input		{ padding:3px; background:#FFFFFF; border:#cccccc 1px solid;}
+
+
+#lc_box		{ width:980px; overflow:hidden; margin:0 auto;}

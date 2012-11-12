@@ -1,0 +1,120 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312" />
+<link rel="stylesheet" href="css/common.css" type="text/css" />
+<title>管理区域</title>
+<style type="text/css">
+<!--
+
+.left_title_1 {
+	background-color: #FC9;
+	color:#73938E;
+	font-weight:bold;
+	line-height:30px;
+	text-align:center;
+}
+.left_title_2 {
+	background-color: #fff;
+	color:#73938E;
+	font-weight:bold;
+	text-align:center;
+}
+#man_zone_x table{
+    background-color:#CCC;
+}
+#man_zone_x table tr{
+    background-color:#fff;
+}
+
+-->
+
+</style>
+</head>
+	<script type="text/javascript" src="/js/fckeditor/fckeditor.js"></script>
+	<script type="text/javascript">
+
+window.onload = function()
+{
+	var oFCKeditor = new FCKeditor( 'content' ) ;
+	oFCKeditor.BasePath	= '/js/fckeditor/' ;
+	oFCKeditor.Height	=	400;
+	oFCKeditor.ReplaceTextarea() ;
+}
+</script>
+<body>
+<form action="" method="post" enctype="multipart/form-data" name="form1" id="form1">
+  <input type="hidden" name="news_id" value="<?php echo $news['news_id']?>" />
+  <div id="man_zone_x">
+    <table width="100%" border="0" align="center" >
+      <tr>
+            <td width="10%" class="left_title_1">
+            </td>
+            <td width="90%" class="left_title_1">
+                修改荔枝MV
+            </td>
+      </tr>
+      <tr>
+            <td class="left_title_2">荔枝用户ID</td>
+            <td>
+                <input name="user_id" type="text" id="user_id" value="<?php echo $news['user_id'] ?>" />
+            </td>
+      </tr>
+      <tr>
+            <td class="left_title_2">标题</td>
+            <td>
+                <input name="news_title" type="text" id="news_title" value="<?php echo $news['news_title'] ?>" />
+            </td>
+      </tr>
+	  <tr>
+            <td class="left_title_2">副标题</td>
+            <td>
+                <input name="news_st" type="text" id="news_st" value="<?php echo $news['news_st'] ?>" />
+            </td>
+      </tr>
+	   <tr>
+            <td class="left_title_2">个人页图片</td>
+            <td>
+                <input name="index_img" type="file" id="index_img" />
+            </td>	
+      </tr>
+	   <tr>
+            <td class="left_title_2">列表图片</td>
+            <td>
+                <input name="img_url" type="file" id="img_url" />
+            </td>	
+      </tr>
+<!--	  <tr>
+            <td class="left_title_2">内容页图片</td>
+            <td>
+            	<input name="url" type="file" id="url" />
+            </td>
+      </tr>
+-->	  <tr>
+            <td class="left_title_2">视频地址</td>
+            <td>
+                <input name="video_link" type="text" id="video_link" value="<?php echo $news['video_link'] ?>" />
+            </td>
+      </tr>
+<!--      <tr>
+            <td class="left_title_2">简介</td>
+            <td>
+            <textarea name="news_content" cols="100" rows="5" id="news_content"><? echo $news['news_content'] ?></textarea>
+            </td>
+      </tr>
+-->	  <tr>
+            <td class="left_title_2">详细内容</td>
+            <td><textarea name="content" id="content"><?php echo $news['content'] ?></textarea></td>
+      </tr>
+      <tr>
+            <td class="left_title_2"></td>
+            <td class="left_title_2">
+            <input name="submit" type="submit" id="提交" value="提交" />
+      </tr>
+    </table>
+  </div>
+</form>
+
+</body>
+
+</html>

@@ -1,0 +1,32 @@
+/* 调图、不循环 */
+.lc_header_nav_a,
+.lc_header_nav_b,
+.lc_header_nav_c,
+.lc_header_nav_e,
+.lc_header_nav_d	{ background:url(../images/lc_bg.png) no-repeat;}
+
+/* 页头 */
+#lc_header		{ width:980; height:185px; overflow:hidden; float:left;}
+#lc_header_a	{ width:980px; height:29px; padding:1px 0 0 0; line-height:29px; overflow:hidden; float:left;}
+	#lc_header_a dt	{ width:100px; float:left;}
+	#lc_header_a dd	{ width:880px; text-align:right; color:#878787; float:right;}
+	#lc_header_a dd a	{ color:#878787;}
+
+#lc_header_b	{ width:980px; height:154px; margin:0 0 1px 0; display:inline; position:relative; float:left;}
+	.lc_header_logo		{ width:360px; height:60px; top:22px; left:0; position:absolute; z-index:}
+	.lc_header_login	{ width:600px; height:30px; text-align:right; line-height:35px; color:#9ba8aa; overflow:hidden; position:absolute; top:0; right:9px;}
+	.lc_header_login a	{ color:#9ba8aa;}
+	.lc_header_login span a	{ color:#2dc5e0;}
+	.lc_header_nav		{ width:620px; height:34px; position:absolute; bottom:0; left:0;}
+		.lc_header_nav_a	{ width:63px; height:34px; margin:0 22px 0 33px; display:inline; float:left;}
+		.lc_header_nav_a:hover	{ background-position:0 -34px;}
+		.lc_header_nav_b	{ width:102px; height:34px; margin:0 22px 0 0; display:inline; background-position:-63px -68px; float:left;}
+		.lc_header_nav_b:hover	{ background-position:-63px -34px;}
+		.lc_header_nav_c	{ width:102px; height:34px; margin:0 22px 0 0; display:inline; background-position:-165px -68px; float:left;}
+		.lc_header_nav_c:hover	{ background-position:-165px -34px;}
+		.lc_header_nav_d	{ width:102px; height:34px; margin:0 22px 0 0; display:inline; background-position:-267px -68px; float:left;}
+		.lc_header_nav_d:hover	{ background-position:-267px -34px;}
+		.lc_header_nav_e	{ width:87px; height:34px; margin:0 22px 0 0; display:inline; background-position:-369px -68px; float:left;}
+		.lc_header_nav_e:hover	{ background-position:-369px -34px;}
+	
+	.lc_header_about	{ width:347px; height:117px; position:absolute; top:31px; right:9px;}

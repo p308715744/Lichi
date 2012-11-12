@@ -1,0 +1,83 @@
+/* CSS Document */
+/* ∏ˆ»À ◊“≥ */
+#lc_personal_left_b_left dt,
+.lc_personal_right_b_m,
+#lc_cont_right_d dt span,
+#lc_personal_left_b_left li a:hover,
+#botton a,
+#botton a:hover		{ background:url(../images/lc_bg.png) no-repeat;}
+
+#lc_personal	{ width:980px; margin:10px 0 0 0; display:inline; float:left;} 
+
+	/* ◊Û∞Î«Ú */
+	#lc_personal_left	{ width:651px; float:left;}
+		
+		/* πˆ∂ØÕº∆¨ */
+		#lc_personal_left_a	{ width:651px; height:383px; overflow:hidden; float:left;}
+		
+		/* ¿Û÷¶ª„ */
+		#lc_personal_left_b	{ width:651px; border-top:#000000 10px solid; background:url(../images/lc_gif_006.gif); float:left;}
+		#lc_personal_left_b_left	{ width:196px; float:left;}
+		#lc_personal_left_b_left dl	{ width:196px; height:30px; border-bottom:#363435 1px solid; float:left;}
+		#lc_personal_left_b_left dt	{ width:60px; height:30px; background-position:-355px -200px; float:left;}
+		#lc_personal_left_b_left dd	{ padding:4px 4px 0 0; text-align:right; float:right;}
+		#lc_personal_left_b_left dd a	{ color:#2f92cf; padding:4px; text-decoration:none;}
+		#lc_personal_left_b_left dd a:hover	{ background:#2f92cf; color:#FFFFFF;}
+		#lc_personal_left_b_left li	{ width:196px; height:73px; line-height:16px;border-bottom:#363435 1px solid; float:left;}
+		#lc_personal_left_b_left li a	{ width:165px; height:60px; padding:13px 20px 0 11px; overflow:hidden; color:#FFFFFF; text-decoration:none; float:left;}
+		#lc_personal_left_b_left li a:hover	{ background-position:0 -386px;}
+		#lc_personal_left_b_left li span	{ width:165px; height:16px; color:#2f92cf; float:left;}
+		#lc_personal_left_b_left li h6		{ width:165px; height:32px; font-size:12px; font-weight:normal; overflow:hidden; float:left;}
+		
+		#lc_personal_left_b_right	{ width:454px; padding:1px 0 0 1px; background:#efefef; float:left;}
+		#lc_personal_left_b_right li	{ width:454px; height:160px; border-bottom:#FFFFFF 1px solid; float:left;}
+		#lc_personal_left_b_right li h5	{ width:220px; height:160px; padding:0 9px 0 0; float:left;}
+		#lc_personal_left_b_right li h1	{ width:225px; height:34px; font-size:14px; float:left;}
+		#lc_personal_left_b_right li h1 img	{ float:left;}
+		#lc_personal_left_b_right li h2	{ width:225px; height:32px; overflow:hidden; line-height:16px; font-size:14px; float:left;}
+		#lc_personal_left_b_right li h2 a	{ color:#333333;}
+		#lc_personal_left_b_right li h3	{ width:225px; height:56px; overflow:hidden; padding:8px 0 0 0; line-height:18px; color:#666666; font-weight:normal; font-size:12px; float:left;}
+		#lc_personal_left_b_right li h4	{ width:210px; font-size:12px; padding:3px 0 0 15px; font-weight:normal; background:url(../images/lc_bg_1.png) no-repeat 0 9px; float:left;}
+		#lc_personal_left_b_right li h4	a	{ color:#2f92cf; padding:4px; text-decoration:none;}
+		#lc_personal_left_b_right li h4	a:hover	{ background:#2f92cf; color:#FFFFFF;}		
+		
+	/* ”“∞Î«Ú */
+	#lc_personal_right	{ width:320px; float:right;}
+		
+		/* ¿Û÷¶œ»…˙ΩÈ…‹ */
+		#lc_personal_right_a	{ width:310px; height:26px; line-height:27px; padding:0 0 0 10px; margin:0 0 1px 0; display:inline; background:#000000; color:#FFFFFF; font-size:14px; font-weight:bold; overflow:hidden; float:left;}
+		#lc_personal_right_a a	{ color:#2f92cf;}
+		
+		#lc_personal_right_b	{ width:310px; height:346px; padding:10px 0 0 10px; background:#000000; color:#FFFFFF; float:left;}
+		#lc_personal_right_b dl	{ width:310px; height:140px; overflow:hidden; float:left;}
+		#lc_personal_right_b dt	{ width:154px; height:140px; float:left;}
+		#lc_personal_right_b dt img	{ border:#FFFFFF 1px solid; float:left;}
+		#lc_personal_right_b dd	{ width:140px; float:left;}
+		#lc_personal_right_b dd li	{ width:140px; height:29px; float:left;}
+		#lc_personal_right_b span	{ width:310px; height:155px; overflow:hidden; line-height:30px; padding:10px 0 0 0; float:left;}
+		.lc_personal_right_b_m	{ width:226px; height:24px; text-align:center; color:#7fcaf4; margin:0 0 0 37px; display:inline; background-position:0 -312px; float:left;}
+		
+		/*∞¥≈•*/
+		#botton		{ width:300px; height:61px; background:#FFFFFF; border-top:#1378af 10px solid; text-align:center; padding:0 10px; float:left;}
+		#botton a		{ width:85px; height:21px; background-position:-20px -619px; font-size:12px; color:#888888; margin:20px 7px 0 7px; display:inline; line-height:23px; float:left;}
+		#botton a:hover	{ background-position:-20px -598px; font-size:12px; color:#FFFFFF; text-decoration:none;}
+		
+		/* ¿Û÷¶MV */
+		#lc_cont_right_d	{ width:320px; background:#fff; border-top:#1378af 10px solid; float:left;}
+		#lc_cont_right_d dt	{ width:320px; height:51px; float:left;}
+		#lc_cont_right_d dt span	{ width:115px; height:51px; background-position:-115px -161px; float:left;}
+		#lc_cont_right_d dt a		{ margin:15px 4px 0 0; padding:0 4px; color:#1378af; display:inline; text-decoration:none; float:right;}
+		#lc_cont_right_d dt a:hover	{ color:#FFFFFF; background:#1378af; }
+		#lc_cont_right_d dd			{ width:320px; height:232px; padding:3px 0 0 0; overflow:hidden; text-align:center; line-height:17px; float:left;}
+		#lc_cont_right_d dd	p		{ width:320px; margin:8px 0 0 0; display:inline; float:left;}
+		#lc_cont_right_d dd	span	{ width:320px; color:#999999; float:left;}
+		#lc_cont_right_d dd	p a		{ color:#1378af; font-weight:bold; text-decoration:none; padding:4px;}
+		#lc_cont_right_d dd	p a:hover	{ background:#1378af; color:#FFFFFF;}
+		
+		.lc_personal_right_c	{ width:320px; float:left;}
+		.lc_personal_right_c *	{ float:left;}
+		
+		
+		
+		
+		

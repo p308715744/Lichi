@@ -1,0 +1,137 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312" />
+<title>展示修改｜荔枝先生</title>
+<meta name="keywords" content="大连，大连新闻，大连论坛，大连资讯，大连滚子游戏，大连生活，五年四班，大连博客，大连话，大连图片，大连视频，大连交友，大连问吧，大连知道，大连人物，大连团购,大连旅游，大连餐饮，大连教育，大连房产，大连汽车，大连娱乐，大连购物，大连摄影，美达美女，美女，美达，美女榜，美达美女榜，大连美女,moda,dalian,daliannews,lichi,荔枝,lichiman,荔枝先生,荔枝汇,荔枝视物所,励志男人,励志先生,励志" /> 
+<meta name="description" content="大连新青年网是大连生活资讯信息最丰富的网络媒体，是大连本土化互动、娱乐网络平台，荔枝先生，发掘男人优秀的一面，励志男人的私家江湖。"/> 
+
+<link href="css/reset.css" rel="stylesheet" type="text/css" />
+<link href="css/header_article.css" rel="stylesheet" type="text/css" />
+<link href="css/footer.css" rel="stylesheet" type="text/css" />
+<link href="css/alter_show.css" rel="stylesheet" type="text/css" />
+
+<link rel="stylesheet" type="text/css" href="/ext-3.1.0/resources/css/ext-all.css" />
+<script type="text/javascript" src="/ext-3.1.0/adapter/ext/ext-base.js"></script>
+<script type="text/javascript" src="/ext-3.1.0/ext-all.js"></script>
+<script type="text/javascript" src="/ext-3.1.0/ext-lang-zh_CN.js"></script>
+<script type="text/javascript" src="/newjs/sendmsg.js"></script>
+<script>
+function sendmsg()   
+{   
+	if("<?php echo $_SESSION['Zend_Auth']['storage']->username?>")
+		//msg.abc(<?php echo $result['user_id'] ;?>); 
+		location.href = "?Controller=SecondACT&action=PageSendShortMsg&user_id=<?php echo $visitUser_id?>&show_id=<?php echo $shows['show_id'] ;?>";
+	else
+		alert("请登录后留言");
+}   
+</script>
+
+<script type="text/javascript" src="/ckeditor/ckeditor.js"></script>
+<script src="/ckeditor/sample.js" type="text/javascript"></script>
+<link href="/ckeditor/sample.css" rel="stylesheet" type="text/css" />
+
+</head>
+
+<body>
+<div id="lc_box"><!--盒子·居中-->
+<?php require(APP_DIR . '/LichiViews/personalHeader.html');		?>	
+    
+    <div id="publish_cont"><!--展示详细页-->
+		<dl id="publish_cont_a">
+        	<dt><?php echo $result['nickname'] ;?>的荔枝视物所</dt>
+            <dd></dd>
+        </dl>
+        <div id="publish_cont_b">
+        	<a href="?Controller=SecondACT&action=ShowDetail&user_id=<?php echo $result['user_id']?>&show_id=<?php echo $shows['show_id']?>"><img src="<?php echo $shows['show_img']?>" width="220" height="160" border="0" /></a>
+            <div id="publish_cont_b_left">
+                <h1><?php echo $shows['title']?></h1>
+                <h2><?php echo $shows['dateline']?></h2>
+                <h3><span><?php echo $shows['views']?></span> 次浏览 / <span><?php echo $shows['ticket']?></span> 票 / <span><?php echo $shows['discuss_count']?></span> 条 <a href="?Controller=SecondACT&action=showDiscuss&user_id=<?php echo $visitUser_id?>&show_id=<?php echo $shows['show_id'] ;?>">评论</a></h3>
+                <div class="publish_cont_xian"></div>
+                <h4>
+                <?php echo $shows['text']?>
+                </h4>
+            </div>
+            <ul id="publish_cont_b_right">
+            	<li><a href="?Controller=SecondACT&action=showDiscuss&user_id=<?php echo $visitUser_id?>&show_id=<?php echo $shows['show_id'] ;?>" >发表评论(<span><?php echo $shows['discuss_count'] ;?>条</span>)</a></li>
+                <li><a href="#" onClick="sendmsg(); ">发送消息</a></li>
+                <li><a href="javascript:window.print()">打印此页</a></li>
+                <li><a href="javascript:window.external.addfavorite('http://lichi.we54.com','荔枝先生');">加入收藏</a></li>
+                <li><a href="#" onClick="msg.poll(<?php echo $shows['show_id'] ;?>)">支持一下</a></li>
+            </ul>
+        </div>
+    </div>
+    
+    <div id="alter_show"><!--内容-->
+    	<em>
+           	<a href="?Controller=SecondACT&action=IndexInsertAttachment&user_id=<?php echo $visitUser_id?>&show_id=<?php echo $shows['show_id'] ;?>&type=2">发表图片</a>
+         	<a href="?Controller=SecondACT&action=IndexInsertAttachment&user_id=<?php echo $visitUser_id?>&show_id=<?php echo $shows['show_id'] ;?>&type=1">发表文字</a>
+            <?php if(FI_CheckAdminRoot()){?>
+                <a href="?Controller=SecondACT&action=IndexInsertAttachment&user_id=<?php echo $result['user_id']?>&show_id=<?php echo $show_id?>&type=3">发表视频</a>
+            <?php }?>
+		</em>
+		<ul>
+        
+		<?php $temp=0; foreach($AttachmentsData as $data){?>
+        
+				<form id="form<?php echo $temp?>" name="form<?php echo $temp?>" method="post"  enctype="multipart/form-data" action="?Controller=SecondACT&action=PostShowsEidt">	
+					<input type="hidden" name="show_id" id="show_id" value="<?php echo $show_id;?>"  />
+					<input type="hidden" name="attach_id" id="attach_id" value="<?php echo $data['attach_id'];?>"  />
+					<input type="hidden" name="atc_type" id="atc_type" value="<?php echo $data['atc_type'];?>"  />
+					<input type="hidden" name="user_id" id="user_id" value="<?php echo $visitUser_id;?>"  />
+					<input type="hidden" name="file_name" id="file_name" value="file<?php echo $temp?>"  />
+                    <li>
+                        <div class="alter_show_left"><span class="alter_show_pic">
+                        <?php if($data['atc_type'] == 2){?>
+                        <img src="<?php echo $data['img_url'];?>" width="220" border="0" />
+                        <?php }?>
+                        <?php if($data['atc_type'] == 1){?>
+                        文章
+                        <?php }?>
+                        <?php if($data['atc_type'] == 3){?>
+                        视频
+                        <?php }?>
+                        </span></div>
+                        <div class="alter_show_right">
+                            <span class="alter_show_insert">
+                        <?php if($data['atc_type'] == 2){?>
+                            <input type="file" value="浏 览" class="file" name="file<?php echo $temp?>" />
+                        <?php }?>
+                        <?php if($data['atc_type'] == 1){?>
+                            <span style="float:left; width:300px;">.</span>
+                        <?php }?>
+                        <?php if($data['atc_type'] == 3){?>
+                           <span style="float:left"> 视频地址：</span><input type="text" value="<?php echo $data['img_url']?>" name="img_url" id="img_url" style="border:#CCC 1px solid; height:22px; float:left; width:238px"  />
+                        <?php }?>
+                            
+                            <a href="#" onclick="document.form<?php echo $temp?>.submit();">保存修改</a><a href="?Controller=SecondACT&action=AttachDelete&user_id=<?php echo $visitUser_id ;?>&show_id=<?php echo $show_id ;?>&attach_id=<?php echo $data['attach_id'] ;?>">删 除 </a></span>
+                            <span class="alter_show_edit">
+                            
+                                    <textarea name="content" id="editor1<?php echo $temp?>" class="ARElks"><?php echo $data['content']?></textarea>
+                                    <script type="text/javascript">
+                                        CKEDITOR.replace( 'editor1<?php echo $temp?>',
+                                            {
+                                                extraPlugins : 'uicolor',
+                                                toolbar :
+                                                [
+                                                    [ 'Bold', 'Italic', '-',  'Link', 'Unlink' ,'-','JustifyLeft','JustifyCenter','JustifyRight','JustifyBlock','-','Image','Smiley','-','Styles','Format','Font'],
+                                                ]
+                                            });
+                                    </script>
+                            </span>
+                        </div>  
+                   </li>
+				</form>
+               
+		<?php $temp++; }?>
+           
+           
+		</ul>
+        <div id="space"></div>
+    </div>
+    
+<?php require(APP_DIR . '/LichiViews/personalFooter.html');		?>	
+</div>
+</body>
+</html>

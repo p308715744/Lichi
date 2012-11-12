@@ -1,0 +1,17 @@
+/* CSS Document */
+
+#lc_mr	p span			{ background:url(../images/lc_bg.png) no-repeat;}
+
+/* 页面重新定议 */
+.lc_header_nav_a		{ width:63px; height:34px; margin:0 22px 0 33px; display:inline; background-position:0 -68px; float:left;}
+.lc_header_nav_a:hover	{ background-position:0 -34px;}
+.lc_header_nav_d	{ width:102px; height:34px; margin:0 22px 0 0; display:inline; background-position:-267px 0; float:left;}
+.lc_header_nav_d:hover	{ background-position:-267px -34px;}
+
+/* 荔枝先生 */
+#lc_mr			{ width:980px; margin:10px 0 0 0; display:inline; float:left;}
+#lc_mr	p		{ width:980px; height:28px; background:#000000; float:left;}
+#lc_mr	p span	{ width:122px; height:28px; padding:0 0 0 16px; overflow:hidden; line-height:29px; font-size:14px; font-weight:bold; color:#FFFFFF; background-position:0 -212px; float:left;}
+#lc_mr	dl		{ width:979px; padding:1px 0 0 1px; background:#efefef; float:left;}
+#lc_mr	dl dt	{ width:489px; height:217px; padding:0 1px 1px 0; float:left;}
+#lc_mr	dl dd	{ width:488px; height:217px; padding:0 1px 1px 0; float:left;}

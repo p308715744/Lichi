@@ -1,0 +1,229 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312" />
+<title>荔枝先生——首页</title>
+<meta name="keywords" content="大连，大连新闻，大连论坛，大连资讯，大连滚子游戏，大连生活，五年四班，大连博客，大连话，大连图片，大连视频，大连交友，大连问吧，大连知道，大连人物，大连团购,大连旅游，大连餐饮，大连教育，大连房产，大连汽车，大连娱乐，大连购物，大连摄影，美达美女，美女，美达，美女榜，美达美女榜，大连美女,moda,dalian,daliannews,lichi,荔枝,lichiman,荔枝先生,荔枝汇,荔枝视物所,励志男人,励志先生,励志" /> 
+<meta name="description" content="大连新青年网是大连生活资讯信息最丰富的网络媒体，是大连本土化互动、娱乐网络平台，荔枝先生，发掘男人优秀的一面，励志男人的私家江湖。"/> 
+<link href="css/reset.css" rel="stylesheet" type="text/css" />
+<link href="css/header.css" rel="stylesheet" type="text/css" />
+<link href="css/footer.css" rel="stylesheet" type="text/css" />
+<link href="css/index.css" rel="stylesheet" type="text/css" />
+<script>  
+//鼠标经过div时变色JS代码
+//移过时div的背景色   
+function rowOver(target)   
+{   
+target.style.background='#FFFFFF';
+target.style.backgroundImage="url(images/imgback.jpg)";
+target.style.backgroundRepeat="no-repeat";
+}   
+//移出时div的背景色   
+function rowOut(target)   
+{   
+target.style.background='#efefef';
+target.style.backgroundImage="url(images/imgback.jpg)";
+target.style.backgroundRepeat="no-repeat";
+}   
+function rowOverB(target)   
+{   
+target.style.background='#FFFFFF';
+}   
+//移出时div的背景色   
+function rowOutB(target)   
+{   
+target.style.background='#efefef';
+}   
+//恢复div的的onmouseover事件配套调用函数   
+function resumeRowOver()   
+{   
+rowOver(this);   
+}   
+function dofoucs()
+{
+		document.form.serchkey.value = "";
+}
+
+</script>
+</head>
+
+<style type="text/css">
+<!--
+.rollBox				{ width:651px; height:357px; position:relative; overflow:hidden;}
+.rollBox .LeftBotton	{ height:39px;width:39px; background:url(images/right1.gif) no-repeat; overflow:hidden; display:inline; cursor:pointer; position:absolute; top:167px; left:10px;}
+.rollBox .RightBotton	{ height:39px;width:39px; background:url(images/left1.gif) no-repeat;  overflow:hidden; display:inline; cursor:pointer; position:absolute; top:167px; right:10px;}
+.rollBox .Cont			{ width:651px;overflow:hidden;}
+.rollBox .ScrCont		{ width:10000000px;}
+.rollBox .Cont .pic		{ width:651px;float:left;text-align:center;}
+.rollBox .Cont .pic img	{ display:block;}
+.rollBox .Cont .pic p	{ line-height:26px;color:#505050;}
+.rollBox .Cont a:link,.rollBox .Cont a:visited{ color:#626466;text-decoration:none;}
+.rollBox .Cont a:hover{ color:#f00;text-decoration:underline;}
+.rollBox #List1,.rollBox #List2{ float:left;}
+-->
+</style>
+
+
+
+<body>
+<div id="lc_box"><!--盒子·居中-->
+
+<?php require(APP_DIR . '/LichiViews/LichiHeader.html');		?>	
+    
+    <div id="lc_cont">
+    	<div id="lc_cont_left"><!--左半球-->
+            <dl id="lc_cont_left_b" style="height:26px; background-color:#FFF">
+            	<img src="images/gp1.jpg" width="651" height="26" border="0" />
+            </dl>
+
+    		<div id="lc_cont_left_a" style="height:357px;"><!--滚动图片展示-->
+                            <div class="rollBox">
+                                <div class="LeftBotton" onmousedown="ISL_GoUp()" onmouseup="ISL_StopUp()" onmouseout="ISL_StopUp()"></div>
+                                <div class="Cont" id="ISL_Cont">
+                                    <div class="ScrCont">
+                                        <div id="List1">    
+                                            <div class="pic"><a href="<?php echo $doorDat['img1_link']?>" target="_blank"><img src="<?php echo $doorDat['img_1']?>" width="651" height="357" /></a></div>
+                                            <div class="pic"><a href="<?php echo $doorDat['img2_link']?>" target="_blank"><img src="<?php echo $doorDat['img_2']?>" width="651" height="357" /></a></div>
+                                            <div class="pic"><a href="<?php echo $doorDat['img3_link']?>" target="_blank"><img src="<?php echo $doorDat['img_3']?>" width="651" height="357" /></a></div>
+                                            <div class="pic"><a href="<?php echo $doorDat['img4_link']?>" target="_blank"><img src="<?php echo $doorDat['img_4']?>" width="651" height="357" /></a></div>
+                                        </div>
+                                        <div id="List2"></div>
+                                    </div>
+                                </div>
+                                <div class="RightBotton" onmousedown="ISL_GoDown()" onmouseup="ISL_StopDown()" onmouseout="ISL_StopDown()"></div>
+                            </div>
+            </div>
+            <script type="text/javascript" src="./newjs/changeimgs.js"></script><!--应放控件后-->
+
+
+            <dl id="lc_cont_left_b">
+            	<img src="images/lc_gif_003.gif" width="217" height="10" border="0" /><img src="images/lc_gif_004.gif" width="434" height="10" border="0" />
+            </dl>
+            <div id="lc_cont_left_c"><!--荔枝视物所-->
+            	<dl>
+                	<dt><a href="?Controller=MainACT&action=Shows"></a></dt>
+                    <dd>
+                    	<a href="?Controller=MainACT&action=Shows">+点击查看全部照片</a>
+                    </dd>
+                </dl>
+                <ul>
+                <?php foreach($showDatass as $data){?>
+                
+                
+                	<li onmouseover="rowOver(this)" onmouseout="rowOut(this)" style="background-image:url(images/imgback.jpg); background-repeat:no-repeat; height:195px;">
+                    	<a href="?Controller=SecondACT&action=ShowDetail&user_id=<?php echo $data['user_id']?>&show_id=<?php echo $data['show_id']?>" >
+                        <div style=" height:12px; width:162px; overflow:hidden; float:left"></div>
+                        <img src="<?php echo $data['show_img']?>" width="162" height="118" border="0" />
+                        </a>
+                        <b><span><a href="?Controller=SecondACT&action=ShowDetail&user_id=<?php echo $data['user_id']?>&show_id=<?php echo $data['show_id']?>"><?php echo Fi_cut_str($data['truename'],6)?></a></span></b>
+                        <p><span><?php echo $data['views']?></span> 次浏览 / <span><?php echo $data['discuss_count']?></span> 次<a href="?Controller=SecondACT&action=ListShowDiscuss&user_id=<?php echo $data['user_id']?>">评论</a></p>
+                        
+                    </li>
+                    
+                    
+                <?php }?>   
+                </ul>
+            </div>
+            <div id="lc_cont_left_d"><!--荔枝会员展示-->
+            	<dl>
+                	<dt></dt>
+                    <dd>
+                    	 <ul>
+                         
+                <?php foreach($showds as $data){?>
+                			<li onmouseover="rowOverB(this)" onmouseout="rowOutB(this)">
+                                <a href="?Controller=SecondACT&action=ShowDetail&user_id=<?php echo $data['user_id']?>&show_id=<?php echo $data['show_id']?>"><img src="<?php echo $data['show_img']?>" width="162" height="118" border="0" /></a><br />
+                                <p><b><a href="?Controller=SecondACT&action=ShowDetail&user_id=<?php echo $data['user_id']?>&show_id=<?php echo $data['show_id']?>"><?php echo $data['title']?></a></b><br />
+                                <a href="?Controller=MainACT&action=Personal&id=<?php echo $data['user_id']?>"><?php echo $data['truename']?></a>的视物所</p>                        
+							</li>
+                <?php }?>   
+                            
+						</ul>
+                    </dd>
+                </dl>
+            </div>
+    	</div>
+        <div id="lc_cont_right"><!--右半球-->
+    		<div id="lc_cont_right_a"><!--AD1-->
+            
+                    <object classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000" codebase="http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=7,0,19,0" width="320" height="276">
+                      <param name="movie" value="ad.swf" />
+                      <param name="quality" value="high" />
+                      <embed src="ad.swf" quality="high" pluginspage="http://www.macromedia.com/go/getflashplayer" type="application/x-shockwave-flash" width="320" height="276"></embed>
+                    </object>	
+                    
+<!--					<a href="<?php echo $doorDat['img5_link']?>" target="_blank"><img src="<?php echo $doorDat['img_5']?>" width="320" height="276" border="0" /></a>
+-->                    
+            </div>
+            <dl id="lc_cont_right_b"><!--搜索-->
+            	<dt>搜索荔枝先生</dt>
+                <dd>
+                <form name="form" method="post" action="?Controller=MainACT&action=Lichier">
+                	<input type="text" value="请填写姓名" class="lc_cont_right_b_text" name="serchkey" onfocus="dofoucs()" />
+                    <input type="submit" value="" class="lc_cont_right_b_submit"/>
+                </form>   
+                </dd>
+            </dl>
+            <dl id="lc_cont_right_c"><!--荔枝通告-->
+            	<dt>
+                	<span></span>
+                    <a href="?Controller=MainACT&action=LichiNewsList">+查看全部</a>
+                </dt>
+                <dd>
+                	<a href="<?php echo $doorDat['link_1img']?>"><img src="<?php echo $doorDat['1_img']?>" width="320" height="200" border="0" /></a>
+                </dd>
+            </dl>
+            <dl id="lc_cont_right_d"><!--荔枝MV-->
+            	<dt>
+                	<span></span>
+                    <a href="?Controller=MainACT&action=ListMV">+查看全部</a>
+                </dt>
+                <dd>
+                	<a href="?Controller=MainACT&action=MVDetail&news_id=<?php echo $news['news_id']?>"><img src="<?php echo $news['index_img']?>" width="300" height="170" border="0" /></a>
+                    <p>
+                    	<a href="?Controller=MainACT&action=MVDetail&news_id=<?php echo $news['news_id']?>"><?php echo $news['news_title']?></a>
+                    	<span><?php echo $news['news_st']?></span>
+                    </p>
+                </dd>
+            </dl>
+            <dl id="lc_cont_right_e"><!--荔枝汇-->
+            	<dt>
+                	<span></span>
+                    <a href="http://bbs.we54.com/forumdisplay.php?fid=951" target="_blank">+查看全部</a>
+                </dt>
+                <dd style="height:294px;">
+                	<ul>
+                <?php foreach($bbs as $data){?>
+                    
+                    	<li><span></span><a target="_blank" href="http://bbs.we54.com/viewthread.php?tid=<?php echo $data['tid']?>"><?php echo Fi_cut_str($data['subject'],17);?> </a> <?php echo $data['author']?> </li>
+                <?php }?>
+                    </ul>
+                </dd>
+            </dl>
+    	</div>
+    </div>
+    
+    <dl id="lc_cont_new"><!--新进会员-->
+    	<dt>
+            <span></span>
+            <a href="?Controller=MainACT&action=Lichier">+查看全部</a>
+        </dt>
+        <dd>
+            <ul>
+            
+                <?php foreach($newusrs as $data){?>
+                <?php if($data['head_img']){?>
+                		<li><a href="?Controller=MainACT&action=Personal&id=<?php echo $data['user_id']?>"><img src="<?php echo $data['head_img']?>" width="80" height="80" border="0" alt="<?php echo $data['truename']?>" /></a></li>
+                 <?php }else{?>
+                		<li><a href="?Controller=MainACT&action=Personal&id=<?php echo $data['user_id']?>"><img src="images/defhead.jpg" width="80" height="80" border="0" alt="<?php echo $data['nickname']?>"  /></a></li>
+                <?php }}?>
+                
+            </ul>
+        </dd>
+    </dl>
+    
+<?php require(APP_DIR . '/LichiViews/personalFooter.html');		?>	
+
+</div>
+</body>
+</html>

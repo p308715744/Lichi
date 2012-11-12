@@ -1,0 +1,15 @@
+/* CSS Document */
+
+#notice_particular em span		{ background:url(../images/lc_bg.png) no-repeat;}
+
+/* 页面重新定议 */
+.lc_header_nav_a		{ width:63px; height:34px; margin:0 22px 0 33px; display:inline; background-position:0 -68px; float:left;}
+.lc_header_nav_a:hover	{ background-position:0 -34px;}
+.lc_header_nav_d	{ width:102px; height:34px; margin:0 22px 0 0; display:inline; background-position:-267px 0; float:left;}
+.lc_header_nav_d:hover	{ background-position:-267px -34px;}
+
+/* 荔枝先生 */
+#notice_particular			{ width:980px; margin:10px 0 0 0; display:inline; float:left;}
+#notice_particular em		{ width:980px; height:28px; font-style:normal; background:#000000; float:left;}
+#notice_particular em span	{ width:122px; height:28px; padding:0 0 0 16px; overflow:hidden; line-height:29px; font-size:14px; font-weight:bold; color:#FFFFFF; background-position:0 -212px; float:left;}
+	#notice_particular_cont	{ width:980px; background:#efefef; text-align:center; float:left;}

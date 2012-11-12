@@ -1,0 +1,34 @@
+/* CSS Document */
+/* Õ¹Ê¾Ò³ */
+#lc_show_left_c	a:hover,
+#lc_show_left_c	span		{ background:url(../images/lc_bg.png) no-repeat;}
+
+#lc_show	{ width:980px; margin:10px 0 0 0; display:inline; float:left;} 
+
+	/* ÄÚÈÝ */
+	#lc_show_left	{ width:980px; float:left;}
+	
+		#lc_show_subnav	{ width:970px; height:28px; padding:0 0 0 10px; background:#000000; font-size:14px; color:#2f92cf; font-weight:bold; line-height:28px; position:relative; float:left;}
+		#lc_show_subnav span{ height:28px; font-size:14px; color:#FFFFFF; font-weight:bold; line-height:28px; float:left;}
+		#lc_show_subnav b	{ height:28px; font-size:14px; color:#2f92cf; font-weight:bold; line-height:28px; float:left;}
+		#lc_show_subnav em	{ width:6px; height:28px; float:left;}
+		
+		#lc_show_left_b	{ width:979px; padding:1px 0 0 1px; background:#efefef; float:left;}
+		#lc_show_left_b li	{ width:489px; height:160px; border-bottom:#FFFFFF 1px solid; float:left;}
+		#lc_show_left_b li h5	{ width:220px; height:160px; padding:0 9px 0 0; float:left;}
+		#lc_show_left_b li h1	{ width:225px; height:34px; font-size:14px; float:left;}
+		#lc_show_left_b li h1 img	{ float:left;}
+		#lc_show_left_b li h2	{ width:225px; height:32px; overflow:hidden; line-height:16px; font-size:14px; float:left;}
+		#lc_show_left_b li h2 a	{ color:#333333;}
+		#lc_show_left_b li h3	{ width:225px; height:56px; overflow:hidden; padding:8px 0 0 0; line-height:18px; color:#666666; font-weight:normal; font-size:12px; float:left;}
+		#lc_show_left_b li h4	{ width:210px; font-size:12px; padding:3px 0 0 15px; font-weight:normal; background:url(../images/lc_bg_1.png) no-repeat 0 9px; float:left;}
+		#lc_show_left_b li h4	a	{ color:#2f92cf; padding:4px; text-decoration:none;}
+		#lc_show_left_b li h4	a:hover	{ background:#2f92cf; color:#FFFFFF;}
+	
+	/* ·­Ò³ */	
+	#lc_show_left_c		{ width:980px; height:40px; padding:33px 0 0 0; background:#efefef; text-align:center; float:left;}
+	#lc_show_left_c	a	{ height:18px; color:#000000; line-height:18px; padding:3px 6px 1px; margin:0 4px; display:inline; background:#dbdbdb; border:#000000 1px solid; text-decoration:none; }
+	#lc_show_left_c	a:hover	{ color:#FFFFFF; padding:3px 6px 1px; border:#265772 1px solid;  background:url(../images/lc_bg.png) no-repeat; background-position:-384px -240px;}
+	#lc_show_left_c	span{ height:18px; color:#FFFFFF; line-height:18px; padding:3px 6px 1px; margin:0 4px; display:inline; background-position:-384px -240px; border:#265772 1px solid;}
+	#lc_show_left_c	em	{ width:8px; overflow:hidden;}
+	

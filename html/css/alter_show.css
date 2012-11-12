@@ -1,0 +1,51 @@
+/* CSS Document */
+#publish_cont_a dt,
+#publish_cont_b_right,
+#alter_show em a,
+#alter_show em a:hover,
+.alter_show_insert a,
+.alter_show_insert a:hover		{ background:url(../images/lc_bg.png) no-repeat;}
+
+
+#publish_cont		{ width:980px; margin:10px 0 0 0; display:inline; background:#ffffff; float:left;}
+
+#publish_cont_a		{ width:980px; height:31px; padding:10px 0; overflow:hidden; float:left;}
+	#publish_cont_a dt	{ width:180px; height:31px; padding:0 6px 0 0; text-align:center; line-height:31px; color:#ffffff; font-weight:bold; background-position:-266px -312px; float:left;}
+	#publish_cont_a dd	{ width:303px; padding:4px 0 0 0; float:right;}
+
+	
+#publish_cont_b		{ width:980px; height:160px; float:left;}
+	#publish_cont_b img	{ float:left;}
+	#publish_cont_b_left		{ width:528px; padding:0 0 0 10px; float:left;}
+	#publish_cont_b_left h1	{ width:528px; line-height:24px; text-align:center; font-size:16px; color:#000; float:left;}
+	#publish_cont_b_left h2	{ width:528px; line-height:20px; text-align:center; font-size:12px; font-weight:normal; color:#cccccc;  float:left;}
+	#publish_cont_b_left h3	{ width:528px; line-height:20px; text-align:center; font-size:12px; font-weight:normal; color:#000; float:left;}
+	#publish_cont_b_left h3 span	{ color:#2f92cf;}
+	#publish_cont_b_left h3 a	{ color:#2f92cf; text-decoration:underline;}
+	#publish_cont_b_left h3 a:hover{ text-decoration:none;}
+	#publish_cont_b_left h4	{ width:518px; padding:0 0 0 10px; line-height:20px; font-size:12px; font-weight:normal; color:#666666; float:left;}
+	.publish_cont_xian		{ width:528px; height:5px; margin:5px 0; display:inline; overflow:hidden; background:url(../images/lc_gif_008.gif) repeat-x ; float:left;}
+	
+	#publish_cont_b_right		{ width:132px; height:149px; padding:11px 0 0 60px; line-height:16px; background-position:-264px -343px; float:right;}
+	#publish_cont_b_right li	{ width:132px; height:28px; float:left;}
+	#publish_cont_b_right a	{ padding:4px; color:#666666; float:left; text-decoration:none;}
+	#publish_cont_b_right a span	{ color:#3b96c9;}
+	#publish_cont_b_right a:hover	{ background:#3b96c9; color:#FFFFFF;}
+	
+
+#alter_show		{ width:980px; padding:23px 0 60px 0; background:#FFFFFF; position:relative; float:left;}
+#alter_show em		{ width:972px; height:57px; padding:0 0 0 9px; float:left;}
+#alter_show em a		{ width:134px; height:25px; margin:0 0 0 12px; display:inline; text-align:center; font-size:12px; color:#FFFFFF; font-style:normal; background-position:-20px -573px; float:left;}
+#alter_show em a:hover	{ background-position:-20px -548px; text-decoration:none;}
+#alter_show ul			{ width:980px; float:left;}
+#alter_show ul li		{ width:950px; margin:0 15px 0 15px; display:inline; padding:28px 0 28px 0; border-bottom:#9dcae4 1px dashed; float:left;}
+	.alter_show_left	{ width:222px; margin:0 0 0 15px; display:inline; float:left;}
+		.alter_show_pic		{ width:220px; border:#d0d0d0 1px solid; float:left;}
+	.alter_show_right	{ width:633px; padding:0 70px 0 10px; float:left;}
+		.alter_show_insert	{ width:633px; height:34px; float:left;}
+		.file				{ width:300px; height:23px; padding:0 0 0 5px; line-height:20px; float:left;}
+		.alter_show_insert a{ width:134px; height:25px; margin:0 0 0 12px; display:inline; text-align:center; font-size:12px; color:#FFFFFF; font-style:normal; background-position:-20px -573px; float:left; }
+		.alter_show_insert a:hover	{ background-position:-20px -548px; text-decoration:none;}
+		.alter_show_edit	{ width:626px; border:#CCCCCC 1px solid; padding:0 0 0 5px; float:left;}
+		
+	#space	{ width:980px; height:1px; background:#FFFFFF; position:absolute; bottom:60px; left:0;}

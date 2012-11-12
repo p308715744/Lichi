@@ -1,0 +1,29 @@
+/* CSS Document */
+#list_subnav span,
+#list_page	a:hover,
+#list_page	span	{ background:url(../images/lc_bg.png) no-repeat;}
+
+
+
+/* 页面重新定议 */
+.lc_header_nav_a		{ width:63px; height:34px; margin:0 22px 0 33px; display:inline; background-position:0 -68px; float:left;}
+.lc_header_nav_a:hover	{ background-position:0 -34px;}
+.lc_header_nav_d	{ width:102px; height:34px; margin:0 22px 0 0; display:inline; background-position:-267px 0; float:left;}
+.lc_header_nav_d:hover	{ background-position:-267px -34px;}
+
+
+#video_list		{ width:979px; margin:10px 0 0 0; display:inline; float:left;}
+	#list_subnav		{ width:979px; height:28px; background:#000000; border-bottom:#FFFFFF 1px solid; float:left;}
+	#list_subnav span	{ width:159px; height:28px; background-position:-20px -520px; padding:0 0 0 15px; font-size:14px; color:#FFFFFF; font-weight:bold; line-height:28px; float:left;}
+	
+	#list_cont	{ width:978px; background:#efefef; padding:0 0 0 1px; overflow:hidden; float:left;}
+	#video_list dl		{ width:325px; height:250px; margin:0 1px 1px 0; display:inline; background:#000000; overflow:hidden; float:left;}
+	#video_list dl dt	{ width:300px; height:169px; border:#afafaf 1px solid; margin:15px 13px 15px 12px; display:inline; float:left;}
+	#video_list dl dd	{ width:325px; height:49px; text-align:center; font-size:12px; color:#999999; line-height:16px; float:left;}
+	#video_list dl dd a	{ font-size:12px; color:#1378af; font-weight:bold;}
+	
+	#list_page		{ width:979px; height:40px; padding:33px 0 0 0; text-align:center; float:left;}
+	#list_page	a	{ height:18px; color:#000000; line-height:18px; padding:3px 6px 1px; margin:0 4px; display:inline; background:#dbdbdb; border:#000000 1px solid; text-decoration:none;}
+	#list_page	a:hover	{ color:#FFFFFF; padding:3px 6px 1px; border:#265772 1px solid;  background:url(../images/lc_bg.png) no-repeat; background-position:-384px -240px;}
+	#list_page	span{ height:18px; color:#FFFFFF; line-height:18px; padding:3px 6px 1px; margin:0 4px; display:inline; background-position:-384px -240px; border:#265772 1px solid;}
+	#list_page	em	{ width:8px; overflow:hidden;}

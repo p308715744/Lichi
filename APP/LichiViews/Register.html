@@ -1,0 +1,257 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312" />
+<title>申请加入｜荔枝先生</title>
+<meta name="keywords" content="大连，大连新闻，大连论坛，大连资讯，大连滚子游戏，大连生活，五年四班，大连博客，大连话，大连图片，大连视频，大连交友，大连问吧，大连知道，大连人物，大连团购,大连旅游，大连餐饮，大连教育，大连房产，大连汽车，大连娱乐，大连购物，大连摄影，美达美女，美女，美达，美女榜，美达美女榜，大连美女,moda,dalian,daliannews,lichi,荔枝,lichiman,荔枝先生,荔枝汇,荔枝视物所,励志男人,励志先生,励志" /> 
+<meta name="description" content="大连新青年网是大连生活资讯信息最丰富的网络媒体，是大连本土化互动、娱乐网络平台，荔枝先生，发掘男人优秀的一面，励志男人的私家江湖。"/> 
+
+<link href="css/reset.css" rel="stylesheet" type="text/css" />
+<link href="css/header.css" rel="stylesheet" type="text/css" />
+<link href="css/footer.css" rel="stylesheet" type="text/css" />
+<link href="css/index.css" rel="stylesheet" type="text/css" />
+<link href="css/lc_register.css" rel="stylesheet" type="text/css" />
+
+<script src="js/jquery.js" type="text/javascript"></script>
+<script type="text/javascript" src="js/My97DatePicker/WdatePicker.js"></script>
+<script src="newjs/jquery.validate.js" type="text/javascript"></script>
+<style>
+label.valid {
+	margin:8px 0 0 5px ;
+	background: url('/images/checked.gif') no-repeat;
+	height:20px;
+	float:left;
+	padding:0 0 0 19px;
+	line-height:15px;
+	color:blue
+}
+label.error {
+	margin:8px 0 0 5px ;
+	height:20px;
+	float:left;
+	line-height:15px;
+}
+.we54error{
+	background: url('/images/false.gif') no-repeat;
+	height:20px;
+	float:left;
+	padding:0 0 0 19px;
+	line-height:15px;
+	color:red
+}
+</style>
+<script type="text/javascript">
+
+$().ready(function() {
+	jQuery.validator.addMethod("character", function(value, element) {    
+	  return this.optional(element) || /^[\u4e00-\u9fa5]+$/.test(value);    
+	}, "<span class='we54reerror'>只能为中文字</span>"); 
+	jQuery.validator.addMethod("number", function(value, element) {    
+	  return this.optional(element) || /^[0-9]+$/.test(value);    
+	}, "<span class='we54reerror'>只能为数字</span>"); 
+	$("#form1").validate({
+		success: function(label) {
+			 label.addClass("valid").text("输入正确!")
+		   },
+		rules: {
+			truename: {
+				required: true,
+				character: true,
+				minlength: 1,
+				maxlength: 6
+			},
+			msg_b: {
+				required: true
+			},
+			bdate: {
+				required: true
+			},
+			height: {
+				required: true,
+				number: true,
+				minlength: 3,
+				maxlength: 3
+			},
+			weight: {
+				required: true,
+				number: true,
+				minlength: 2,
+				maxlength: 3
+			},
+			mobile: {
+				required: true,
+				number: true,
+				minlength: 8,
+				maxlength: 12
+			},
+			qq: {
+				required: true,
+				number: true,
+				minlength: 4,
+				maxlength: 12
+			},
+			img1: {
+				required: true
+			},
+			img2: {
+				required: true
+			},
+			img3: {
+				required: true
+			},
+			img4: {
+				required: true
+			},
+			e_msg: {
+				required: true
+			}
+		},
+		messages: {
+			truename: {
+				required: "请填写真实姓名",
+				minlength: "<span class='we54error'>格式不正确，应由2-6个汉字</span>",
+				maxlength: "<span class='we54error'>格式不正确，应由2-6个汉字</span>"
+			},
+			msg_b: {
+				required: "请填写职业"
+			},
+			bdate: {
+				required: "请选择出生日期"
+			},
+			height: {
+				required: "请填写身高（CM）",
+				minlength: "<span class='we54error'>格式不正确，请正确填写</span>",
+				maxlength: "<span class='we54error'>格式不正确，请正确填写</span>"
+			},
+			weight: {
+				required: "请填写体重（KG）",
+				minlength: "<span class='we54error'>格式不正确，请正确填写</span>",
+				maxlength: "<span class='we54error'>格式不正确，请正确填写</span>"
+			},
+			mobile: {
+				required: "请填写联系电话",
+				minlength: "<span class='we54error'>格式不正确，请正确填写</span>",
+				maxlength: "<span class='we54error'>格式不正确，请正确填写</span>"
+			},
+			qq: {
+				required: "请填写QQ",
+				minlength: "<span class='we54error'>格式不正确，请正确填写</span>",
+				maxlength: "<span class='we54error'>格式不正确，请正确填写</span>"
+			},
+			img1: {
+				required: "上传个人照片"
+			},
+			img2: {
+				required: "上传个人照片"
+			},
+			img3: {
+				required: "上传个人照片"
+			},
+			img4: {
+				required: "上传个人照片"
+			},
+			e_msg: {
+				required: "请填写自述"
+			}
+		}
+	});
+
+});
+</script>
+
+<script>  
+//鼠标经过div时变色JS代码
+//移过时div的背景色   
+function rowOver(target)   
+{   
+target.style.background='#FFFFFF';
+}   
+//移出时div的背景色   
+function rowOut(target)   
+{   
+target.style.background='#efefef';
+}   
+//恢复div的的onmouseover事件配套调用函数   
+function resumeRowOver()   
+{   
+rowOver(this);   
+}   
+</script>
+</head>
+
+<body>
+<div id="lc_box"><!--盒子·居中-->
+<?php require(APP_DIR . '/LichiViews/LichiHeader.html');		?>	
+	<form id="form1" name="form1" action="" method="post" enctype="multipart/form-data" >
+    <div id="lc_register_cont">
+    	<div id="lc_register_cont_subnav"><span>申请加入荔枝先生</span></div>
+        <span id="lc_register_cont_title"></span>
+        <dl>
+        	<dt>真实姓名：</dt>
+            <dd><input class="text" type="text"  name="truename" id="truename"/></dd>
+        </dl>
+        <dl>
+        	<dt>职业：</dt>
+            <dd><input class="text" type="text"  name="msg_b" id="msg_b"/></dd>
+        </dl>
+        <dl>
+        	<dt>出生年月：</dt>
+            <dd><input class="text" type="text" name="bdate"  id="bdate" onFocus="WdatePicker({startDate:'1990-01-01'})"  /></dd>
+        </dl>
+        <dl>
+        	<dt>身    高(CM)：</dt>
+            <dd><input class="text" type="text"  name="height" id="height"/></dd>
+        </dl>
+        <dl>
+        	<dt>体    重(KG)：</dt>
+            <dd><input class="text" type="text" name="weight" id="weight"/></dd>
+        </dl>
+        <dl>
+        	<dt>电    话:</dt>
+            <dd><input class="text" type="text" name="mobile" id="mobile"/></dd>
+        </dl>
+        <dl>
+        	<dt>QQ:</dt>
+            <dd><input class="text" type="text" name="qq" id="qq" /></dd>
+        </dl>
+        <dl>
+        	<dt>个人照片：</dt>
+            <dd>
+                    <input type="file" class="file" name="img1" id="img1">
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;（请务必上传4张以上含正脸、全身的照片，做为审核依据）
+           </dd>
+        </dl>
+        <dl>
+        	<dt></dt>
+            <dd>
+                    <input type="file" class="file" name="img2" id="img2">
+           </dd>
+        </dl>
+        <dl>
+        	<dt></dt>
+            <dd>
+                    <input type="file" class="file" name="img3" id="img3">
+           </dd>
+        </dl>
+        <dl>
+        	<dt></dt>
+            <dd>
+                    <input type="file" class="file" name="img4" id="img4">
+           </dd>
+        </dl>
+        <dl style="height:75px;">
+        	<dt>自述：</dt>
+            <dd>
+            <textarea name="e_msg" id="e_msg" class="text" style="height:50px; border:#CCC 1px solid" ></textarea>
+            </dd>
+        </dl>
+        <div id="lc_register_cont_button">
+            <input type="submit" value="" style=" background-image:url(images/tu24.png); width:265px; height:68px; cursor:pointer" />
+        </div>
+    </div>
+	</form>
+    
+<?php require(APP_DIR . '/LichiViews/personalFooter.html');		?>	
+</div>
+</body>
+</html>

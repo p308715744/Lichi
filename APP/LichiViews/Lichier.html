@@ -1,0 +1,77 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312" />
+<title>荔枝先生——荔枝先生</title>
+<meta name="keywords" content="大连，大连新闻，大连论坛，大连资讯，大连滚子游戏，大连生活，五年四班，大连博客，大连话，大连图片，大连视频，大连交友，大连问吧，大连知道，大连人物，大连团购,大连旅游，大连餐饮，大连教育，大连房产，大连汽车，大连娱乐，大连购物，大连摄影，美达美女，美女，美达，美女榜，美达美女榜，大连美女,moda,dalian,daliannews,lichi,荔枝,lichiman,荔枝先生,荔枝汇,荔枝视物所,励志男人,励志先生,励志" /> 
+<meta name="description" content="大连新青年网是大连生活资讯信息最丰富的网络媒体，是大连本土化互动、娱乐网络平台，荔枝先生，发掘男人优秀的一面，励志男人的私家江湖。"/> 
+
+<link href="css/reset.css" rel="stylesheet" type="text/css" />
+<link href="css/header.css" rel="stylesheet" type="text/css" />
+<link href="css/footer.css" rel="stylesheet" type="text/css" />
+<link href="css/index.css" rel="stylesheet" type="text/css" />
+<link href="css/lc_mr.css" rel="stylesheet" type="text/css" />
+<script>  
+//鼠标经过div时变色JS代码
+//移过时div的背景色   
+function rowOver(target)   
+{   
+target.style.background='#FFFFFF';
+}   
+//移出时div的背景色   
+function rowOut(target)   
+{   
+target.style.background='#efefef';
+}   
+//恢复div的的onmouseover事件配套调用函数   
+function resumeRowOver()   
+{   
+rowOver(this);   
+}   
+</script>
+</head>
+
+<body>
+<div id="lc_box"><!--盒子·居中-->
+<?php require(APP_DIR . '/LichiViews/LichiHeader.html');		?>	
+    
+    <dl id="lc_mr"><!--荔枝先生-->
+        <dt><span>荔枝先生</span><a href="?Controller=MainACT&action=Lichier&more=sx">更多</a></dt>
+        <dd>
+        	<ul>
+			<?php foreach($Arowset as $r){?>
+            	<li onmouseover="rowOver(this)" onmouseout="rowOut(this)">
+                	<h1><a href="?Controller=MainACT&action=Personal&id=<?php echo $r['user_id']?>"><img src="<?php echo $r['head_img'] ?>" width="138" height="138" border="0" /></a></h1>
+                    <h4><a href="?Controller=MainACT&action=Personal&id=<?php echo $r['user_id']?>"><?php echo $r['truename'] ?></a></h4> 
+                    <h3><?php echo $r['liulanliang'] ?> 次浏览  / 活跃度：<?php echo $r['active_num'] ?></h3>
+                    <h5><a href="?Controller=MainACT&action=Personal&id=<?php echo $r['user_id']?>">+查看详细</a></h5>
+                </li>
+			<?php }?>
+            </ul>
+        </dd>
+    </dl>
+    
+    <dl id="lc_member"><!--荔枝先生-->
+        <dt><span>荔枝会员</span><a href="?Controller=MainACT&action=Lichier&more=hy">更多</a></dt>
+        <dd>
+        	<ul>
+			<?php foreach($Browset as $r){?>
+            	<li onmouseover="rowOver(this)" onmouseout="rowOut(this)">
+                <?php if($r['head_img']){?>
+                	<h1><a href="?Controller=MainACT&action=Personal&id=<?php echo $r['user_id']?>"><img src="<?php echo $r['head_img'] ?>" width="138" height="138" border="0" /></a></h1>
+                 <?php }else{?>
+                	<h1><a href="?Controller=MainACT&action=Personal&id=<?php echo $r['user_id']?>"><img src="images/tu8.jpg" width="138" height="138" border="0" /></a></h1>
+				 <?php }?>
+                    <h4><a href="?Controller=MainACT&action=Personal&id=<?php echo $r['user_id']?>"><?php echo $r['truename'] ?></a></h4> 
+                    <h3><?php echo $r['liulanliang'] ?> 次浏览  / 活跃度：<?php echo $r['active_num'] ?></h3>
+                    <h5><a href="?Controller=MainACT&action=Personal&id=<?php echo $r['user_id']?>">+查看详细</a></h5>
+                </li>
+			<?php }?>
+            </ul>
+        </dd>
+    </dl>
+    
+<?php require(APP_DIR . '/LichiViews/personalFooter.html');		?>	
+</div>
+</body>
+</html>

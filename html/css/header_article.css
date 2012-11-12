@@ -1,0 +1,30 @@
+/* 调图、不循环 */
+body	{ background:url(../images/lichi002.jpg) repeat-x;}
+
+.lc_header_nav_a,
+.lc_header_nav_b,
+.lc_header_nav_c,
+.lc_header_nav_e,
+.lc_header_nav_d	{ background:url(../images/lc_bg.png) no-repeat;}
+
+/* 页头 */
+#lc_header		{ width:980; height:126px; overflow:hidden; float:left;}
+#lc_header_a	{ width:980px; height:29px; padding:1px 0 0 0; line-height:29px; overflow:hidden; float:left;}
+	#lc_header_a dt	{ width:100px; float:left;}
+	#lc_header_a dd	{ width:880px; text-align:right; color:#878787; float:right;}
+	#lc_header_a dd a	{ color:#878787;}
+
+#lc_header_b	{ width:980px; height:97px; position:relative; float:left;}
+	.lc_header_logo		{ width:360px; height:60px; top:22px; left:0; position:absolute; z-index:}
+	.lc_header_login	{ width:600px; height:30px; text-align:right; line-height:35px; color:#9ba8aa; overflow:hidden; position:absolute; top:0; right:9px;}
+	.lc_header_login a	{ color:#9ba8aa;}
+	.lc_header_login span a	{ color:#2dc5e0;}
+	.lc_header_nav		{ width:440px; height:36px; position:absolute; bottom:17px; right:0;}
+		.lc_header_nav_a	{ width:96px; height:36px; margin:0 0 0 14px; display:inline; background-position:0 -240px; float:left;}
+		.lc_header_nav_a:hover	{ background-position:0 -276px;}
+		.lc_header_nav_b	{ width:96px; height:36px; margin:0 0 0 14px; display:inline; background-position:-96px -240px; float:left;}
+		.lc_header_nav_b:hover	{ background-position:-96px -276px;}
+		.lc_header_nav_c	{ width:96px; height:36px; margin:0 0 0 14px; display:inline; background-position:-192px -240px; float:left;}
+		.lc_header_nav_c:hover	{ background-position:-192px -276px;}
+		.lc_header_nav_d	{ width:96px; height:36px; margin:0 0 0 14px; display:inline; background-position:-288px -240px; float:left;}
+		.lc_header_nav_d:hover	{ background-position:-288px -276px;}

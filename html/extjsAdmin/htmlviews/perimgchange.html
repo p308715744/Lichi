@@ -1,0 +1,80 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312" />
+<link rel="stylesheet" href="css/common.css" type="text/css" />
+<title>添加活动</title>
+<style type="text/css">
+<!--
+
+.left_title_1 {
+	background-color: #FC9;
+	color:#666;
+	font-weight:bold;
+	line-height:30px;
+	text-align:center;
+}
+.left_title_2 {
+	background-color: #fff;
+	color:#666;
+	font-weight:bold;
+	text-align:center;
+}
+#man_zone_x table{
+    background-color:#CCC;
+}
+#man_zone_x table tr{
+    background-color:#fff;
+}
+
+-->
+</style>
+
+
+
+
+</head>
+
+<body>
+<form action="?Controller=ExtjsAdmin&action=PersonalPageImgs" method="post" enctype="multipart/form-data" name="form1" id="form1">
+<input type="hidden" name="user_id" value="<?php echo $result['user_id']?>" />
+  <div id="man_zone_x">
+    <table width="100%" border="0" align="center">
+      <tr>
+            <td width="10%" class="left_title_1">
+            </td>
+            <td width="90%" class="left_title_1">
+             	<?php echo $result['truename']?>轮换图片上传
+            </td>
+      </tr>
+   
+	   <tr>
+            <td class="left_title_2">图片A</td>
+            <td>
+                <input name="img_1" type="file" id="img_1" />URL地址<input type="text" name="img1_link" />
+            </td>	
+      </tr>
+	  <tr>
+            <td class="left_title_2">图片B</td>
+            <td>
+            <input name="img_2" type="file" id="img_2" />URL地址<input type="text" name="img2_link" />
+            </td>
+      </tr>
+	  <tr>
+            <td class="left_title_2">图片C</td>
+            <td>
+            <input name="img_3" type="file" id="img_3" />URL地址<input type="text" name="img3_link" />
+            </td>
+      </tr>
+      <tr>
+            <td class="left_title_2"></td>
+            <td class="left_title_2">
+            <input name="submit" type="submit" id="提交" value="提交"  />
+      </tr>
+    </table>
+  </div>
+</form>
+
+</body>
+
+</html>

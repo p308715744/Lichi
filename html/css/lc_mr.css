@@ -1,0 +1,43 @@
+/* CSS Document */
+#lc_mr	dt span,
+#lc_member	dt span			{ background:url(../images/lc_bg.png) no-repeat;}
+/* 页面重新定议 */
+.lc_header_nav_a		{ width:63px; height:34px; margin:0 22px 0 33px; display:inline; background-position:0 -68px; float:left;}
+.lc_header_nav_a:hover	{ background-position:0 -34px;}
+.lc_header_nav_b	{ width:102px; height:34px; margin:0 22px 0 0; display:inline; background-position:-63px 0; float:left;}
+.lc_header_nav_b:hover	{ background-position:-63px -34px;}
+
+
+/* 荔枝先生 */
+#lc_mr			{ width:980px; margin:10px 0 0 0; display:inline; float:left;}
+#lc_mr	dt		{ width:980px; height:28px; background:#000000; float:left;}
+#lc_mr	dt span	{ width:122px; height:28px; padding:0 0 0 16px; overflow:hidden; line-height:29px; font-size:14px; font-weight:bold; color:#FFFFFF; background-position:0 -212px; float:left;}
+#lc_mr	dt a	{ width:40px; height:28px; font-size:12px; color:#FFFFFF; line-height:28px; text-decoration:underline; float:right;}
+#lc_mr	dt a:hover	{ text-decoration:none;}
+#lc_mr	dd		{ width:980px; height:457px; overflow:hidden; background:#efefef; float:left;}
+#lc_mr	dd ul	{ width:981px; float:left;}
+#lc_mr	dd li	{ width:195px; height:219px; border-right:#FFFFFF 1px solid; border-bottom:#FFFFFF 1px solid; padding:10px 0 0 0; float:left;}
+	#lc_mr	dd li h1	{ width:195px; text-align:center; float:left;}
+	#lc_mr	dd li h4	{ width:195px; line-height:18px; padding:8px 0 0 0; font-size:14px; text-align:center; float:left;}
+	#lc_mr	dd li h4 a	{ color:#1378af;}
+	#lc_mr	dd li h3	{ width:195px; line-height:16px; font-size:12px; font-weight:normal; color:#666666; text-align:center; float:left;}
+	#lc_mr	dd li h5	{ width:195px; line-height:24px; font-size:12px; font-weight:normal; text-align:center; float:left;}
+	#lc_mr	dd li h5 a	{ padding:4px; color:#1378af; text-decoration:none;}
+	#lc_mr	dd li h5 a:hover	{ background:#1378af; color:#FFF;}
+
+/* 荔枝会员 */
+#lc_member			{ width:980px; float:left;}
+#lc_member	dt		{ width:980px; height:28px; background:#5a5a5a; float:left;}
+#lc_member	dt span	{ width:201px; height:28px; padding:0 0 0 16px; overflow:hidden; line-height:29px; font-size:14px; font-weight:bold; color:#FFFFFF; background-position:-138px -212px; float:left;}
+#lc_member	dt a	{ width:40px; height:28px; font-size:12px; color:#FFFFFF; line-height:28px; text-decoration:underline; float:right;}
+#lc_member	dt a:hover	{ text-decoration:none;}
+#lc_member	dd		{ width:980px; height:457px; overflow:hidden; background:#efefef; float:left;}
+#lc_member	dd ul	{ width:981px; float:left;}
+#lc_member	dd li	{ width:195px; height:219px; border-right:#FFFFFF 1px solid; border-bottom:#FFFFFF 1px solid; padding:10px 0 0 0; float:left;}
+	#lc_member	dd li h1	{ width:195px; text-align:center; float:left;}
+	#lc_member	dd li h4	{ width:195px; line-height:18px; padding:8px 0 0 0; font-size:14px; text-align:center; float:left;}
+	#lc_member	dd li h4 a	{ color:#666666;}
+	#lc_member	dd li h3	{ width:195px; line-height:16px; font-size:12px; font-weight:normal; color:#666666; text-align:center; float:left;}
+	#lc_member	dd li h5	{ width:195px; line-height:24px; font-size:12px; font-weight:normal; text-align:center; float:left;}
+	#lc_member	dd li h5 a	{ padding:4px; color:#1378af; text-decoration:none;}
+	#lc_member	dd li h5 a:hover	{ background:#1378af; color:#FFF;}

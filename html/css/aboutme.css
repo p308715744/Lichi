@@ -1,0 +1,27 @@
+/* CSS Document */
+
+#lc_aboutme		{ width:980px; margin:10px 0 0 0; display:inline; float:left;}
+
+#lc_aboutme_top		{ width:970px; height:28px; line-height:29px; font-size:14px; font-weight:bold; padding:0 0 0 10px; background:#000000; color:#FFFFFF; overflow:hidden; float:left;}
+#lc_aboutme_top	 b		{ float:left;}
+#lc_aboutme_top	 span	{ background:url(../images/lc_gif_007.gif) no-repeat right; padding:0 10px 0 0; color:#2f92cf; float:left;}
+
+#lc_aboutme_bottom		{ width:980px; background:#efefef; float:left;}
+
+#lc_aboutme_left		{ width:140px; line-height:31px; overflow:hidden; padding:10px 0 0 10px; float:left;}
+#lc_aboutme_left img	{ border:#FFFFFF 1px solid; float:left;}
+#lc_aboutme_left span	{ width:140px; padding:10px 0 0 0; text-align:center; float:left;}
+#lc_aboutme_left a		{ color:#2f92cf; padding:4px; text-decoration:underline;}
+#lc_aboutme_left a:hover{ color:#FFFFFF; background:#2f92cf; text-decoration:none;}
+#lc_aboutme_left p		{ width:136px; padding:0 0 0 4px; font-size:14px; color:#2f92cf; float:left;}
+
+#lc_aboutme_right		{ width:696px; padding: 0 92px 10px 0; float:right;}
+#lc_aboutme_right_a		{ width:696px; padding:30px 0 10px 0; font-size:24px; font-weight:bold; color:#2f92cf; float:left;}
+#lc_aboutme_right_b		{ width:693px; height:332px; padding:0 0 0 3px; overflow:hidden; line-height:36px; float:left;}
+#lc_aboutme_right_b	li	{ font-size:14px; border-bottom:#e1e1e1 1px solid; float:left;}
+	#lc_aboutme_right_b	span{ color:#2f92cf; font-weight:bold;}
+	.lc_aboutme_right_b_lia	{ width:696px; height:36px; overflow:hidden; float:left;}
+	.lc_aboutme_right_b_lib	{ width:420px; height:36px; overflow:hidden; float:left;}
+	.lc_aboutme_right_b_lic	{ width:273px; height:36px; overflow:hidden; float:left;}
+	
+#lc_aboutme_right_c		{ width:676px; height:275px; padding:0 10px; margin:10px 0 0 0; display:inline; font-size:14px; line-height:30px; background:#e5f2f7; border:#317dad 3px solid; border-left:none; border-right:none; overflow:hidden; float:left;}

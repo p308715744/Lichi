@@ -1,0 +1,30 @@
+/* CSS Document */
+#lc_video_cont_subnav span	{ background:url(../images/lc_bg.png) no-repeat;}
+
+
+
+/* 页面重新定议 */
+
+
+
+
+/*荔枝先生*/
+#lc_video_cont	{ width:980px; background:#000000; margin:10px 0 0 0; display:inline; float:left;}
+
+	/*子导航*/
+	#lc_video_cont_subnav		{ width:980px; height:28px; float:left;}
+	#lc_video_cont_subnav span	{ width:159px; height:28px; background-position:-20px -520px; padding:0 0 0 15px; font-size:14px; color:#FFFFFF; font-weight:bold; line-height:28px; float:left;}
+	
+	/*内容*/
+	#lc_video_cont_cont			{ width:978px; border:#efefef 1px solid; float:left;}
+	#lc_video_cont_cont dl		{ width:978px; height:505px; padding:30px 0 0 0; float:left;}
+	#lc_video_cont_cont dl dt	{ width:978px; height:425px; text-align:center; float:left;}
+	#lc_video_cont_cont dl dd	{ width:978px; height:80px; float:left;}
+		#lc_video_cont_title	{ width:978px; height:28px; font-size:18px; color:#1378af; font-weight:bold; text-align:center; float:left;}
+		#lc_video_cont_note		{ width:978px; height:15px; padding:0 0 37px 0; text-align:center; float:left;}
+		#lc_video_cont_note em	{ background:url(../images/tu23.png) no-repeat left; padding:0 0 0 58px; font-size:12px; color:#999999; font-style:normal;}
+	#lc_video_cont_cont ol		{ width:950px; padding:0 14px; float:left;}
+	#lc_video_cont_cont ol li	{ width:900px; background:#191919; padding:20px 36px 20px 14px; font-size:12px; color:#cccccc; line-height:22px; float:left;}
+	#lc_video_cont_cont ul		{ width:936px; padding:25px 0 50px 42px; float:left;}
+	#lc_video_cont_cont ul li	{ width:468px; height:24px; font-size:12px; color:#dddddd; float:left;}
+	#lc_video_cont_cont ul li a	{ font-size:12px; color:#2f93cf;}
